@@ -1,0 +1,226 @@
+/* Global styles for the background */
+.app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e8c1d8, #f7e4c6, #d4f0f0);
+  font-family: Arial, sans-serif;
+}
+
+/* Main chat container */
+.chat-container {
+  width: 100%;
+  max-width: 36rem;
+  padding: 1.5rem;
+  background-color: #f8f4f4;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Chat mode selector */
+.chat-mode-selector {
+  display: flex;
+  gap: 1rem;
+}
+
+.mode-button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: #ffd1dc;
+  color: #4a4a4a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mode-button:hover {
+  background-color: #ffb3c1;
+}
+
+.mode-button.active {
+  background-color: #f69899;
+  color: #ffffff;
+}
+
+/* Message container */
+.message-container {
+  height: 16rem;
+  overflow-y: auto;
+  border: 1px solid #e6b5c9;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background-color: #fff4f1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.message {
+  padding: 0.75rem;
+  background-color: #ffd1dc;
+  border-radius: 0.75rem;
+  color: #4a4a4a;
+  transition: background-color 0.3s ease;
+  word-wrap: break-word;
+}
+
+.message:hover {
+  background-color: #ffb3c1;
+}
+
+/* Input and button styling */
+.input-container {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.input-field {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #e6b5c9;
+  border-radius: 0.75rem;
+  background-color: #fff4f1;
+  color: #4a4a4a;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #f6a5c0;
+  box-shadow: 0 0 0 2px rgba(246, 165, 192, 0.5);
+}
+
+.send-button {
+  padding: 1rem;
+  background-color: #ffb3c1;
+  color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #f69899;
+}
+
+/* Private chat section styling */
+.private-chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e6b5c9;
+  border-radius: 0.75rem;
+  background-color: #f9d8e5;
+}
+
+.user-select {
+  padding: 0.75rem;
+  border: 1px solid #e6b5c9;
+  border-radius: 0.75rem;
+  background-color: #fff4f1;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.user-select:focus {
+  outline: none;
+  border-color: #f6a5c0;
+  box-shadow: 0 0 0 2px rgba(246, 165, 192, 0.5);
+}
+
+.private-message-input {
+  padding: 1rem;
+  border: 1px solid #e6b5c9;
+  border-radius: 0.75rem;
+  background-color: #fff4f1;
+  color: #4a4a4a;
+}
+
+.private-message-input:focus {
+  outline: none;
+  border-color: #f6a5c0;
+  box-shadow: 0 0 0 2px rgba(246, 165, 192, 0.5);
+}
+
+.send-private-button {
+  padding: 1rem;
+  background-color: #ffb3c1;
+  color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.send-private-button:hover {
+  background-color: #f69899;
+}
+
+/* Styling for the user list in private chat */
+.user-list-container {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #f9d8e5;
+  border-radius: 0.75rem;
+  border: 1px solid #e6b5c9;
+}
+
+.user-list-item {
+  padding: 0.75rem;
+  background-color: #ffd1dc;
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-list-item:hover {
+  background-color: #ffb3c1;
+}
+
+/* Scrollbar customization */
+.message-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-container::-webkit-scrollbar-track {
+  background: #ffe6ea;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background: #ffb3c1;
+  border-radius: 4px;
+}
+
+.message-container::-webkit-scrollbar-thumb:hover {
+  background: #f69899;
+}
+
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.status-dot.green {
+  background-color: green;
+}
+
+.status-dot.gray {
+  background-color: gray;
+}
+
